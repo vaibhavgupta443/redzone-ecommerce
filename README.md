@@ -1,6 +1,6 @@
-# Redzone Ecommerce 
+# Redzone Ecommerce - Amazon Clone
 
-A full-stack ecommerce application built with Spring Boot, featuring JWT authentication, secure user management, and modern web technologies.
+A full-stack ecommerce application built with **Spring Boot** backend and **React** frontend, featuring JWT authentication, secure user management, and modern web technologies.
 
 ## 🚀 Features
 
@@ -14,7 +14,8 @@ A full-stack ecommerce application built with Spring Boot, featuring JWT authent
 
 ## 🛠️ Tech Stack
 
-- **Backend**: Spring Boot 3.5.5
+### Backend
+- **Framework**: Spring Boot 3.5.5
 - **Security**: Spring Security with JWT
 - **Database**: H2 (in-memory database)
 - **ORM**: Spring Data JPA
@@ -24,10 +25,20 @@ A full-stack ecommerce application built with Spring Boot, featuring JWT authent
   - Lombok for code reduction
   - JWT (jsonwebtoken) for authentication
 
+### Frontend
+- **Framework**: React 18.2.0
+- **HTTP Client**: Axios for API calls
+- **Routing**: React Router DOM 6.11.0
+- **Build Tool**: React Scripts
+- **Testing**: Jest & React Testing Library
+- **Proxy**: Configured for backend on port 8081
+
 ## 📋 Prerequisites
 
 - Java 17 or higher
 - Maven 3.6 or higher
+- Node.js 16 or higher
+- npm or yarn
 - Git
 
 ## 🚀 Getting Started
@@ -38,12 +49,13 @@ git clone https://github.com/vaibhavgupta443/redzone-ecommerce.git
 cd redzone-ecommerce
 ```
 
-### Navigate to backend directory
+### Backend Setup
+1. Navigate to backend directory:
 ```bash
 cd backend
 ```
 
-### Run the application
+2. Run the Spring Boot application:
 ```bash
 ./mvnw spring-boot:run
 ```
@@ -53,14 +65,36 @@ Or on Windows:
 mvnw.cmd spring-boot:run
 ```
 
-### Access the application
-The application will be available at `http://localhost:8080`
+The backend will be available at `http://localhost:8080`
+
+### Frontend Setup
+1. Open a new terminal and navigate to frontend directory:
+```bash
+cd frontend
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the React development server:
+```bash
+npm start
+```
+
+The frontend will be available at `http://localhost:3000`
+
+### Access the Application
+- **Frontend**: http://localhost:3000 (React UI)
+- **Backend API**: http://localhost:8080 (Spring Boot API)
+- **H2 Database Console**: http://localhost:8080/h2-console
 
 ## 📁 Project Structure
 
 ```
 redzone/
-├── backend/
+├── backend/                    # Spring Boot API
 │   ├── src/
 │   │   ├── main/
 │   │   │   ├── java/
@@ -70,8 +104,19 @@ redzone/
 │   │   │       └── application.properties
 │   │   └── test/
 │   ├── pom.xml
-│   ├── .gitignore
-│   └── README.md
+│   └── .gitignore
+│
+├── frontend/                   # React Application  
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.js
+│   ├── package.json
+│   ├── Dockerfile
+│   └── .env.example
+│
 ├── .gitignore
 └── README.md
 ```
