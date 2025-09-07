@@ -154,13 +154,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Email: vaibhavgupta4432@gmail.com
 
 ## 🎯 Future Plans
-
-- [ ] Add frontend (React/Angular)
-- [ ] Implement product catalog
-- [ ] Add shopping cart functionality
-- [ ] Payment integration
-- [ ] Order management system
-- [ ] Admin dashboard
 - [ ] Email notifications
 - [ ] Advanced search and filtering
 
@@ -171,3 +164,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ⭐ Don't forget to give this project a star if you found it helpful!
+
