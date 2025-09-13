@@ -1,4 +1,4 @@
-# Redzone Ecommerce - Amazon Clone
+# Redzone Ecommerce Fullstack 
 
 A full-stack ecommerce application built with **Spring Boot** backend and **React** frontend, featuring JWT authentication, secure user management, and modern web technologies.
 
@@ -164,4 +164,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ⭐ Don't forget to give this project a star if you found it helpful!
+
 
